@@ -13,7 +13,7 @@ struct GameView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("0")
+                Text("\(game.userScore)")
                     .font(.title)
                     .bold()
                     .padding(30)
@@ -35,7 +35,7 @@ struct GameView: View {
                     }
                 }
                 Spacer()
-                Text("0")
+                Text("\(game.computerScore)")
                     .font(.title)
                     .bold()
                     .padding(30)

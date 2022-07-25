@@ -13,6 +13,8 @@ class Game: ObservableObject {
     @Published var result = Result.waiting
     @Published var userColor: Color = .blue
     @Published var computerColor: Color = .red
+    @Published var computerScore = 0
+    @Published var userScore = 0
 
     func play(action: Action) {
         userAction = action
@@ -26,10 +28,12 @@ class Game: ObservableObject {
             result = Result.victory
             userColor = .green
             computerColor = .black
+            userScore += 1
         } else {
             result = Result.defeat
             userColor = .red
             computerColor = .black
+            computerScore += 1
         }
     }
     
