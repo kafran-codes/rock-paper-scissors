@@ -1,5 +1,5 @@
 //
-//  WaitingHandView.swift
+//  File.swift
 //  RPS
 //
 //  Created by Kolmar Kafran on 25/07/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RockView: View {
+struct WaitingHandView: View {
     let isLeftHandSide: Bool
     let color: Color
     @State private var pulse: CGFloat = 1
@@ -20,13 +20,23 @@ struct RockView: View {
                 x: isLeftHandSide ? -1 : 1,
                 anchor: .center
             )
-            .rotationEffect(isLeftHandSide ? .degrees(-45) : .degrees(-45))
+            .scaleEffect(pulse)
             .shadow(color: color, radius: 10)
+            .onAppear {
+                withAnimation(
+                    .easeInOut
+                        .repeatForever(autoreverses: true)
+                        .speed(0.30)
+                        .delay(Double.random(in: 0...3))
+                ) {
+                    pulse = 1.05 * pulse
+                }
+            }
     }
 }
 
-struct RockView_Previews: PreviewProvider {
+struct WaitingHandView_Previews: PreviewProvider {
     static var previews: some View {
-        RockView(isLeftHandSide: false, color: .red)
+        WaitingHandView(isLeftHandSide: true, color: .red)
     }
 }

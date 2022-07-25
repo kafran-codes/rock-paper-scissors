@@ -12,49 +12,78 @@ struct GameView: View {
 
     var body: some View {
         VStack {
-            switch game.result {
-            case .victory:
-                Text("You win!")
-            case .defeat:
-                Text("You lose!")
-            case .draw:
-                Text("It's a draw")
-            case .waiting:
-                Text("On your feet")
+            HStack {
+                Text("0")
+                    .font(.title)
+                    .bold()
+                    .padding(30)
+                Spacer()
+                switch game.result {
+                case .victory:
+                    Text("You win!").font(.title)
+                case .defeat:
+                    Text("You lose!").font(.title)
+                case .draw:
+                    Text("It's a draw").font(.title)
+                case .waiting:
+                    VStack {
+                    Text("On your hand,")
+                        .font(.title)
+                    Text("Fight!")
+                        .font(.largeTitle)
+                        .bold()
+                    }
+                }
+                Spacer()
+                Text("0")
+                    .font(.title)
+                    .bold()
+                    .padding(30)
             }
             Spacer()
             HStack {
                 switch game.userAction {
                 case .rock:
-                    Rock()
-                case .paper:
-                    Paper()
-                        .frame(width: 192, height: 192)
-                case .scissors:
-                    Scissors()
-                        .frame(width: 192, height: 192)
-                case .waiting:
                     RockView(
                         isLeftHandSide: true,
-                        color: .blue,
-                        delay: 0.15
+                        color: game.userColor
+                    )
+                case .paper:
+                    PaperView(
+                        isLeftHandSide: true,
+                        color: game.userColor
+                    )
+                case .scissors:
+                    ScissorsView(
+                        isLeftHandSide: true,
+                        color: game.userColor
+                    )
+                case .waiting:
+                    WaitingHandView(
+                        isLeftHandSide: true,
+                        color: game.userColor
                     )
                 }
                 switch game.computerAction {
                 case .rock:
-                    Rock()
-                        .frame(width: 192, height: 192)
-                case .paper:
-                    Paper()
-                        .frame(width: 192, height: 192)
-                case .scissors:
-                    Scissors()
-                        .frame(width: 192, height: 192)
-                case .waiting:
                     RockView(
                         isLeftHandSide: false,
-                        color: .red,
-                        delay: 1
+                        color: game.computerColor
+                    )
+                case .paper:
+                    PaperView(
+                        isLeftHandSide: false,
+                        color: game.computerColor
+                    )
+                case .scissors:
+                    ScissorsView(
+                        isLeftHandSide: false,
+                        color: game.computerColor
+                    )
+                case .waiting:
+                    WaitingHandView(
+                        isLeftHandSide: false,
+                        color: game.computerColor
                     )
                 }
             }
@@ -79,7 +108,7 @@ struct GameView: View {
                 }
             } else {
                 Button(action: game.nextRound) {
-                    Text("Next round")
+                    Text("Next Round")
                 }
             }
         }
