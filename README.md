@@ -2,8 +2,6 @@
 
 A simple iOS rock-paper-scissors game showcasing SwiftUI
 
-<video src="https://user-images.githubusercontent.com/1889828/180827022-589885a8-6518-46fd-99ff-cbd89997087c.mp4" />
-
 ## `Screen Shots`
 
 <table style="padding:10px">
@@ -24,5 +22,3 @@ A simple iOS rock-paper-scissors game showcasing SwiftUI
         </td>
     </tr>
 </table>
-
-![Simulator Screen Shot - iPhone 13 mini - 2022-07-25 at 17 03 30](https://user-images.githubusercontent.com/1889828/180842593-de568ff2-81a0-47c0-bf45-2090aaefdd64.png)
