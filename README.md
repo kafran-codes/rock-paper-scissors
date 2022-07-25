@@ -2,7 +2,7 @@
 
 A simple iOS rock-paper-scissors game showcasing SwiftUI
 
-## `Screen Shots`
+## Screen Shots
 
 <table style="padding:10px">
     <tr>
@@ -22,3 +22,6 @@ A simple iOS rock-paper-scissors game showcasing SwiftUI
         </td>
     </tr>
 </table>
+
+
+<video src="https://user-images.githubusercontent.com/1889828/180827022-589885a8-6518-46fd-99ff-cbd89997087c.mp4" />
