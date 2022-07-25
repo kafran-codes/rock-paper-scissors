@@ -31,3 +31,6 @@ A simple iOS rock-paper-scissors game showcasing SwiftUI
 
 ## Features
 
+* SwiftUI Shape for vector drawing
+* Animations
+* @ObservableObject/StateObject for UI State
