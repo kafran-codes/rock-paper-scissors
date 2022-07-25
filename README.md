@@ -1,6 +1,12 @@
 ## rock-paper-scissors
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/1889828/180844720-cf90bb4a-9957-4726-be7f-27a1cbb8b495.png" width="192px" />
+</p>
+
 A simple iOS rock-paper-scissors game showcasing SwiftUI
+
+<video src="https://user-images.githubusercontent.com/1889828/180827022-589885a8-6518-46fd-99ff-cbd89997087c.mp4" width="279px"></video>
 
 ## Screen Shots
 
@@ -23,5 +29,5 @@ A simple iOS rock-paper-scissors game showcasing SwiftUI
     </tr>
 </table>
 
+## Features
 
-<video src="https://user-images.githubusercontent.com/1889828/180827022-589885a8-6518-46fd-99ff-cbd89997087c.mp4" width="279px" />
