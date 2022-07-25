@@ -24,4 +24,4 @@ A simple iOS rock-paper-scissors game showcasing SwiftUI
 </table>
 
 
-<video src="https://user-images.githubusercontent.com/1889828/180827022-589885a8-6518-46fd-99ff-cbd89997087c.mp4" />
+<video src="https://user-images.githubusercontent.com/1889828/180827022-589885a8-6518-46fd-99ff-cbd89997087c.mp4" width="279px" />
