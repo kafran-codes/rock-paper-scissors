@@ -1,7 +1,7 @@
 ## rock-paper-scissors
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/1889828/180844720-cf90bb4a-9957-4726-be7f-27a1cbb8b495.png" width="192px" />
+  <img src="https://user-images.githubusercontent.com/1889828/180845172-8b772d5c-3c01-4421-b03d-76421656d758.png" width="192px" />
 </p>
 
 A simple iOS rock-paper-scissors game showcasing SwiftUI
